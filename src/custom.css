@@ -1,0 +1,67 @@
+.input {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  box-shadow: 0px 0px 0px 0px #9fb4f2;
+  background-color: transparent;
+  border: 1px solid #4e6096;
+  display: inline-block;
+  color: #000000;
+  font-family: Arial;
+  font-size: 22px;
+  font-weight: bold;
+  font-style: italic;
+  padding: 16px 500px;
+  text-decoration: none;
+  text-shadow: 2px -1px 50px #283966;
+}
+
+.input :hover {
+  background-color: transparent;
+}
+
+.input :active {
+  position: relative;
+  top: 1px;
+}
+
+.submit {
+  top: 55%;
+  left: 47%;
+  position: absolute;
+  box-shadow: 0px 0px 0px 0px #9fb4f2;
+  background: linear-gradient(to bottom, #193669 5%, #476e9e 100%);
+  background-color: #193669;
+
+  border: 1px solid #4e6096;
+  cursor: pointer;
+  color: #ffffff;
+  font-family: Arial;
+  font-size: 17px;
+  font-style: italic;
+  padding: 10px 43px;
+  text-decoration: none;
+  text-shadow: 2px -1px 50px #283966;
+}
+
+.submit:hover {
+  background: linear-gradient(to bottom, #476e9e 5%, #193669 100%);
+  background-color: #476e9e;
+}
+
+.submit:active {
+  position: absolute;
+}
+
+.output {
+  position: absolute;
+  left: 50%;
+  top: 70%;
+  transform: translate(-50%, -50%);
+  font-size: 30px;
+  font-style: italic;
+  color: rgb(0, 0, 0);
+  border-bottom: solid #476e9e;
+  padding: 10px;
+}
