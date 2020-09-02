@@ -1,20 +1,29 @@
-import React, { useState } from "react";
+import React from "react";
 import "../custom.css";
+import { connect } from "react-redux";
+import * as actionCreators from "../actions/actions";
 
 const Input = (props) => {
-  const [inputValue, setInputValue] = useState("");
   return (
     <div>
       <input
         className="input"
+        id="input-id"
         placeholder="Please write something"
-        onChange={(event) => setInputValue(event.target.value)}
       ></input>
-      <button className="submit" onClick={() => props.getInput(inputValue)}>
-        Submit
+      <button className="submit" onClick={props.loadNameInfo}>
+        Search
       </button>
     </div>
   );
 };
 
-export default Input;
+const mapDispatchToProps = (dispatch) => {
+  return {
+    loadNameInfo: () => {
+      dispatch(actionCreators.loadName());
+    },
+  };
+};
+
+export default connect(null, mapDispatchToProps)(Input);
