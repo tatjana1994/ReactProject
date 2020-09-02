@@ -1,11 +1,11 @@
 .input {
   position: absolute;
   left: 50%;
-  top: 50%;
+  top: 20%;
   transform: translate(-50%, -50%);
   box-shadow: 0px 0px 0px 0px #9fb4f2;
   background-color: transparent;
-  border: 1px solid #4e6096;
+  border: 3px solid #0a313b;
   display: inline-block;
   color: #000000;
   font-family: Arial;
@@ -15,6 +15,7 @@
   padding: 16px 500px;
   text-decoration: none;
   text-shadow: 2px -1px 50px #283966;
+  text-align: center;
 }
 
 .input :hover {
@@ -27,41 +28,118 @@
 }
 
 .submit {
-  top: 55%;
+  top: 25%;
   left: 47%;
+  transform: translate(-10%, 50%);
   position: absolute;
-  box-shadow: 0px 0px 0px 0px #9fb4f2;
-  background: linear-gradient(to bottom, #193669 5%, #476e9e 100%);
-  background-color: #193669;
-
-  border: 1px solid #4e6096;
+  box-shadow: inset 0px 0px 20px 1px #a6827e;
+  background-color: #0a313b;
+  border: 3px #a37d5b;
+  display: inline-block;
   cursor: pointer;
   color: #ffffff;
-  font-family: Arial;
-  font-size: 17px;
-  font-style: italic;
-  padding: 10px 43px;
+  font-family: Trebuchet MS;
+  font-size: 22px;
+  padding: 12px 45px;
   text-decoration: none;
-  text-shadow: 2px -1px 50px #283966;
+  text-shadow: 0px 0px 11px #57302f;
 }
 
 .submit:hover {
-  background: linear-gradient(to bottom, #476e9e 5%, #193669 100%);
-  background-color: #476e9e;
+  background-color: #0f0a3b;
 }
-
 .submit:active {
   position: absolute;
 }
 
-.output {
-  position: absolute;
+.box {
   left: 50%;
-  top: 70%;
+  top: 50%;
+  position: absolute;
   transform: translate(-50%, -50%);
-  font-size: 30px;
+  width: 400px;
+  height: 50px;
+  text-align: center;
+  border-bottom: 4px solid #0a313b;
+  border-top: 4px solid #0a313b;
+  padding-bottom: 10px;
+}
+
+.name {
+  top: 50%;
+  left: 50%;
+  color: #0a3b14;
+  font-size: 50px;
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
   font-style: italic;
-  color: rgb(0, 0, 0);
-  border-bottom: solid #476e9e;
-  padding: 10px;
+  text-align: center;
+
+  border: 2px solid, #0a313b;
+}
+
+.box1 {
+  left: 50%;
+  top: 58%;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  text-align: left;
+  width: 250px;
+  height: 100px;
+  border-bottom: 3px solid #0a313b;
+  text-align: left;
+}
+.age {
+  top: 48%;
+  left: 50%;
+  transform: translate(-2%, 200%);
+  padding: 0.8%;
+  color: #166b80;
+  font-size: 25px;
+  font-family: Impact;
+  text-align: center;
+}
+.box2 {
+  left: 50%;
+  top: 65%;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  text-align: left;
+  width: 250px;
+  height: 100px;
+  border-bottom: 3px solid #0a313b;
+  text-align: left;
+}
+
+.countries {
+  top: 52%;
+  left: 45%;
+  transform: translate(-2%, 200%);
+  text-align: center;
+  padding: 0.8%;
+  color: #166b80;
+  font-size: 25px;
+  font-family: Impact;
+}
+
+.box3 {
+  left: 50%;
+  top: 72%;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  text-align: left;
+  width: 250px;
+  height: 100px;
+  border-bottom: 3px solid #0a313b;
+  text-align: left;
+}
+
+.gender {
+  top: 56%;
+  left: 45%;
+  transform: translate(-2%, 200%);
+  padding: 0.8%;
+  color: #166b80;
+  font-size: 25px;
+  font-family: Impact;
+  text-align: center;
 }
