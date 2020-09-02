@@ -1,17 +1,26 @@
-import ReactDom from "react-dom";
-import React, { useState } from "react";
+import ReactDOM from "react-dom";
 import Input from "./components/input";
 import Display from "./components/display";
+import { createStore, applyMiddleware } from "redux";
+import { Provider } from "react-redux";
+import thunk from "redux-thunk";
+import reducers from "./reducers/reducers";
+import React from "react";
+
+let store = createStore(reducers, applyMiddleware(thunk));
 
 const App = () => {
-  const [input, setInput] = useState("");
-
   return (
     <div>
-      <Input getInput={(value) => setInput(value)} />
-      <Display value={input} />
+      <Input />
+      <Display />
     </div>
   );
 };
 
-ReactDom.render(<App />, document.getElementById("root"));
+ReactDOM.render(
+  <Provider store={store}>
+    <App />
+  </Provider>,
+  document.getElementById("root")
+);
