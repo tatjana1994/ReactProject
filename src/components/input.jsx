@@ -9,7 +9,7 @@ const Input = (props) => {
       <input
         className="input"
         id="input-id"
-        placeholder="Please write something"
+        placeholder="Write a name here"
       ></input>
       <button className="submit" onClick={props.loadNameInfo}>
         Search
@@ -21,7 +21,7 @@ const Input = (props) => {
 const mapDispatchToProps = (dispatch) => {
   return {
     loadNameInfo: () => {
-      dispatch(actionCreators.loadName());
+      dispatch(actionCreators.loadNameInfo());
     },
   };
 };
