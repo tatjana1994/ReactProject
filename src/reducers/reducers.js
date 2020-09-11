@@ -1,4 +1,5 @@
 import { UPDATE_INFO } from "../action-types/index";
+
 let defaultState = {
   name: "",
   age: "",
