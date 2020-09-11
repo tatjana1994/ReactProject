@@ -1,7 +1,7 @@
 .input {
   position: absolute;
   left: 50%;
-  top: 20%;
+  top: 8%;
   transform: translate(-50%, -50%);
   box-shadow: 0px 0px 0px 0px #9fb4f2;
   background-color: transparent;
@@ -28,7 +28,7 @@
 }
 
 .submit {
-  top: 25%;
+  top: 12%;
   left: 47%;
   transform: translate(-10%, 50%);
   position: absolute;
@@ -53,23 +53,23 @@
 }
 
 .box {
-  left: 50%;
-  top: 50%;
+  left: 80%;
+  top: 35%;
   position: absolute;
   transform: translate(-50%, -50%);
-  width: 400px;
+  width: 500px;
   height: 50px;
   text-align: center;
   border-bottom: 4px solid #0a313b;
   border-top: 4px solid #0a313b;
-  padding-bottom: 10px;
+  padding-bottom: 30px;
 }
 
 .name {
-  top: 50%;
-  left: 50%;
+  top: 20%;
+  left: 70%;
   color: #0a3b14;
-  font-size: 50px;
+  font-size: 70px;
   font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
   font-style: italic;
   text-align: center;
@@ -78,8 +78,8 @@
 }
 
 .box1 {
-  left: 50%;
-  top: 58%;
+  left: 80%;
+  top: 46%;
   position: absolute;
   transform: translate(-50%, -50%);
   text-align: left;
@@ -90,7 +90,7 @@
 }
 .age {
   top: 48%;
-  left: 50%;
+  left: 70%;
   transform: translate(-2%, 200%);
   padding: 0.8%;
   color: #166b80;
@@ -99,8 +99,8 @@
   text-align: center;
 }
 .box2 {
-  left: 50%;
-  top: 65%;
+  left: 80%;
+  top: 52%;
   position: absolute;
   transform: translate(-50%, -50%);
   text-align: left;
@@ -111,7 +111,7 @@
 }
 
 .countries {
-  top: 52%;
+  top: 54%;
   left: 45%;
   transform: translate(-2%, 200%);
   text-align: center;
@@ -122,8 +122,8 @@
 }
 
 .box3 {
-  left: 50%;
-  top: 72%;
+  left: 80%;
+  top: 58%;
   position: absolute;
   transform: translate(-50%, -50%);
   text-align: left;
@@ -135,11 +135,16 @@
 
 .gender {
   top: 56%;
-  left: 45%;
+  left: 75%;
   transform: translate(-2%, 200%);
   padding: 0.8%;
   color: #166b80;
   font-size: 25px;
   font-family: Impact;
   text-align: center;
+}
+
+.map {
+  position: absolute;
+  top: 7%;
 }
