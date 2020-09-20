@@ -7,7 +7,6 @@ import * as actionCreators from "../actions/actions";
 import countries from "../data/geo.json";
 
 const DisplayMap = (props) => {
-  const position = [1.35, 103.8];
   const mapRef = useRef();
 
   const countryStyle = {
