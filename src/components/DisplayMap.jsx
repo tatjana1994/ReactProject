@@ -65,7 +65,6 @@ const DisplayMap = (props) => {
         worldCopyJump="true"
       >
         <TileLayer url="https://server.arcgisonline.com/ArcGIS/rest/services/Canvas/World_Dark_Gray_Base/MapServer/tile/{z}/{y}/{x}" />
-
         <GeoJSON
           style={drawSelectedCountries(props.countryIds)}
           onEachFeature={onEachCountry}
