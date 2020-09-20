@@ -1,7 +1,8 @@
 import axios from "axios";
+import jsonData from "../data/geo.json";
 
 export default function requestApi() {
-  let input = document.getElementById("input-id").value;
+  let input = document.getElementById("search-input-id").value;
 
   if (input) {
     let nationalize = "https://api.nationalize.io/?name=" + input;
@@ -35,18 +36,21 @@ export default function requestApi() {
 }
 
 function dataValidator(name, countries, age, gender) {
-  let nameFixed = name.toUpperCase();
-  let countriesFixed = countries.map((e) => e.country_id).join(", ");
+  let jsonArray = jsonData.features;
+  let countriesArr = [];
+  let nameFixed = name.charAt(0).toUpperCase() + name.slice(1).toLowerCase();
   let countryIds = countries.map((e) => e.country_id);
-  let countryPopularity = countries.map((e) => e.probability);
+  let namePopularity = countries.map((e) => e.probability.toFixed(4));
+
+  fixCountryNames(jsonArray, countryIds, countriesArr);
 
   let data = {
     name: nameFixed,
-    countries: checkIfEmpty(countriesFixed),
+    countries: countriesArr,
     age: checkIfEmpty(age),
     gender: checkIfEmpty(gender),
     countryIds: countryIds,
-    countryPopularity: countryPopularity,
+    namePopularity: namePopularity,
   };
 
   return data;
@@ -59,5 +63,15 @@ function checkIfEmpty(value) {
     return value;
   } else {
     return noResults;
+  }
+}
+
+function fixCountryNames(jsonArr, idArr, countriesArr) {
+  for (let i = 0; i < idArr.length; i++) {
+    for (let j = 0; j < jsonArr.length; j++) {
+      if (jsonArr[j].properties.iso_a2 === idArr[i]) {
+        countriesArr.push(jsonArr[j].properties.admin);
+      }
+    }
   }
 }
